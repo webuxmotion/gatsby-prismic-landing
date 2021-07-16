@@ -6,6 +6,18 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: "@prismicio/gatsby-source-prismic-graphql",
+      options: {
+        repositoryName: "gp-landing",
+        pages: [{
+          type: 'Page',
+          match: '/:uid',
+          previewPath: '/',
+          component: require.resolve('./src/templates/page.js')
+        }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
