@@ -82,6 +82,7 @@ const ContactUs = (props) => {
               data-netlify="true"
               action="/contact-success"
             >
+              <input type="hidden" name="form-name" value="contact-us" />
               {node.form_fields.map((item, i) => {
                 if (item.field_type === 'textarea') {
                   return (
