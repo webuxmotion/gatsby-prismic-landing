@@ -73,14 +73,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header>
-        
           <StaticQuery 
             query={`${navigationQuery}`} 
             render={(data) => {
               return (
                 <>
                   <Branding>
-                    {data.prismic.allNavigations.edges[0].node.branding}
+                    <Link to="/">
+                      {data.prismic.allNavigations.edges[0].node.branding}
+                    </Link>
                   </Branding>
                   <NavLinks>
                     {data.prismic.allNavigations.edges[0].node.navigation_links.map((link) => {
