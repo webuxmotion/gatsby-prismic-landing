@@ -4,8 +4,6 @@ import Hero from './hero';
 import PriceList from './priceList';
 
 const SliceZone = ({ body }) => {
-    console.log('body', body);
-
     return (
         <div>
             {body.map(({ type, primary, ...rest }, i) => {

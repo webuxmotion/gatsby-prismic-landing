@@ -1,7 +1,7 @@
-import { RichText } from 'prismic-reactjs';
 import React from 'react';
 import styled from 'styled-components';
 import PriceItem from './priceItem';
+import RichText from '../components/richText';
 
 const Wrapper = styled.section`
     max-width: 800px;
@@ -19,7 +19,6 @@ const PriceList = ({ title, fields }) => {
             <RichText render={title} />
             <List>
                 {fields.map((item, i) => {
-                    console.log('item', item);
                     return (
                         <PriceItem
                             key={i}

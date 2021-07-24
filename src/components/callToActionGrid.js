@@ -1,7 +1,7 @@
-import { RichText } from 'prismic-reactjs';
 import React from 'react';
 import styled from 'styled-components';
 import CallToActionCard from './callToActionCard';
+import RichText from '../components/richText';
 
 const Wrapper = styled.section`
     max-width: 800px;

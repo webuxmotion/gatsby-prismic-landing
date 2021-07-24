@@ -1,6 +1,7 @@
 import React from 'react';
-import { RichText } from 'prismic-reactjs';
 import styled from 'styled-components';
+
+import RichText from '../components/richText';
 
 const HeroWrapper = styled.section`
     background: url('${props => props.backgroundImage}');

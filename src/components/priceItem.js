@@ -1,6 +1,7 @@
-import { RichText } from 'prismic-reactjs';
 import React from 'react';
 import styled from 'styled-components';
+
+import RichText from '../components/richText';
 
 const Wrapper = styled.section`
     flex-grow: 1;

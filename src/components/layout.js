@@ -37,6 +37,11 @@ const Branding = styled.div`
   font-weight: bold;
   margin: auto 0;
   font-size: 20px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const NavLinks = styled.div`
@@ -54,6 +59,11 @@ const navigationQuery = graphql`
           navigation_links {
             label
             link {
+              ... on PRISMIC_Contact_page {
+                _meta {
+                  uid
+                }
+              }
               ... on PRISMIC_Page {
                 _meta {
                   uid

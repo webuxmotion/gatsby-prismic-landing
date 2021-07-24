@@ -1,4 +1,4 @@
-import { RichText } from 'prismic-reactjs';
+import RichText from '../components/richText';
 import { Link } from "gatsby";
 import React from 'react';
 import styled from 'styled-components';
